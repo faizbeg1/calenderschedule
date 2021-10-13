@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Verdana, sans-serif;
+  text-align: center;
+}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #a2d2ff;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.days li .active {
+  /* padding: 5px;
+  background: #1abc9c;
+  color: white !important; */
+  width: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #1a73e8;
+  border: 1px solid #1a73e8;
+}
+.selected {
+  width: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #cdf2ca;
+  border: 1px solid #cdf2ca;
+}
+
+.active_dates {
+  width: 1.444445em;
+  height: 1.444445em;
+  margin: 0.16667em;
+  font-size: 1.125em;
+  line-height: 1.444445em;
+  border-radius: 2em;
+}
+.inactive_dates {
+  color: grey;
+  border-radius: 2em;
+  width: 1.44em;
+}
+
+.modeof {
+  margin-top: 50px;
+  text-align: center;
+  border: 1px solid #00c1d4;
+  padding: 10px;
+}
+button {
+  padding-right: 30px;
+  margin: 20px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #016abc;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px5px5px#eee;
+  text-shadow: none;
+}
+
+.buttonstyle {
+  background: green;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px#eee;
+  text-shadow: none;
+}
+
+.google {
+  border: 1px solid green;
+  /* background-image: url("https://www.gstatic.com/meet/google_meet_primary_horizontal_2020q4_logo_be3f8c43950bd1e313525ada2ce0df44.svg"); */
+  height: auto;
+  /* background-color: #ff865e; */
+  font-family: Verdana, sans-serif;
+}
+.google:visited :active :default {
+  background: #016abc;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px#eee;
+  text-shadow: none;
+}
+.zoom {
+  border: 1px solid blue;
+}
+.skype {
+  border: 1px solid grey;
+}
+.submit {
+  background: #b9dfff;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px5px5px#eee;
+  text-shadow: none;
+}
+.submit:hover {
+  background: #016abc;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px5px5px#eee;
+  text-shadow: none;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+  .days li .active {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
+}
